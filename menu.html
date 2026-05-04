@@ -12,10 +12,12 @@
   <header>
     <h1 class="logo">Watson's</h1>
     <nav class="menu" aria-label="Main navigation">
-      <a class="nav-item" href="index.html">Home</a>
-      <a class="nav-item" href="about.html">About</a>
-      <a class="nav-item" href="menu.html" aria-current="page">Menu</a>
-      <a class="nav-item" href="contact.html">Contact</a>
+    <ul class="nav-list">
+      <li><a class="nav-item" href="index.html">Home</a></li>
+      <li><a class="nav-item" href="about.html">About</a></li>
+      <li><a class="nav-item" href="menu.html">Menu</a></li>
+      <li><a class="nav-item" href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
     </nav>
   </header>
   <main>
@@ -23,62 +25,70 @@
     <h2>Order Now</h2>
     <p><a href="https://www.toasttab.com/local/order/watsons/r-368c5b5f-492b-4f40-b128-8e22a67a8523">Order</a></p>
     <!-- add more menu items later and cross-reference online menu with photos of in-store menu -->
-    <h2>Drinks</h2>
-    <h3>Hot Drinks</h3>
-    <ul>
-      <li>Tea - $4</li>
-      <li>Coffee - $5</li>
-      <li>Honey Matcha Green Tea (Hot) - $6</li>
-      <li>Lavender Love Matcha Latte (Hot) - $8</li>
-      <li>Masala Chai Latte (Hot) - $8</li>
-
-    </ul>
-    <h3>Iced Drinks</h3>
-    <ul>
-      <li>Iced Coffee - $6</li>
-      <li>Honey Matcha Green Tea (Iced)- $6</li>
-      <li>Lavender Love Matcha Latte (Iced) - $8</li>
-      <li>Masala Chai Latte (Iced) - $8</li>
-      <li>Iced Strawberry Matcha - $9</li>
+    <section id="drinks">
+      <div class="card">
+        <h2>Drinks</h2>
+        <h3>Hot Drinks</h3>
+        <ul>
+          <li>Tea - $4</li>
+          <li>Coffee - $5</li>
+          <li>Honey Matcha Green Tea (Hot) - $6</li>
+          <li>Lavender Love Matcha Latte (Hot) - $8</li>
+          <li>Masala Chai Latte (Hot) - $8</li>
+        </ul>
+        <h3>Iced Drinks</h3>
+        <ul>
+          <li>Iced Coffee - $6</li>
+          <li>Honey Matcha Green Tea (Iced)- $6</li>
+          <li>Lavender Love Matcha Latte (Iced) - $8</li>
+          <li>Masala Chai Latte (Iced) - $8</li>
+          <li>Iced Strawberry Matcha - $9</li>
+        </ul>
+        <h3>Smoothies</h3>
+        <ul>
+          <li>Mango Magic Smoothie - $10</li>
+          <li>Strawberry Beauty Bomb Smoothie - $11</li>
+          <li>Matcha Goddess Smoothie - $12</li>
+          <li>Tropical Sea Moss Smoothie - $14</li>
+        </ul>
+      </div>
       <img src="images/strawberry-matcha.jpg" alt="Strawberry matcha">
-    </ul>
-    <h3>Smoothies</h3>
-    <ul>
-      <li>Mango Magic Smoothie - $10</li>
-      <li>Strawberry Beauty Bomb Smoothie - $11</li>
-      <li>Matcha Goddess Smoothie - $12</li>
-      <li>Tropical Sea Moss Smoothie - $14</li>
-    </ul>
-    <h2>Food</h2>
-    <h3>Light Bites</h3>
-    <ul>
-      <li>Avocado Toast - $8</li>
-      <li>Coconut Yogurt Parfait - $8.95</li>
-      <li>Pepperoni Flatbread - $10</li>
-    </ul>
-    <h3>Burgers</h3>
-    <ul>
-      <li>Classic Black Bean Burger - $12</li>
-    </ul>
-    <h3>Wraps</h3>
-    <ul>
-      <li>Chicken Tzatziki Wrap - $12</li>
-      <li>Fennel Kale Protein Wrap - $14</li>
-      <li>Pesto Chicken Wrap - $16</li>
-    </ul>
-    <h3>Sandwiches</h3>
-    <ul>
-      <li>Garden Pesto - $13</li>
-      <li>Tuna Melt - $13</li>
-      <li>Pesto Chicken Melt - $14</li>
-    </ul>
-    <h3>Salads & Bowls</h3>
-    <ul>
-      <li>Tofu Egg Salad - $7.95</li>
-      <li>Kale Protein Salad - $14</li>
-      <li>Fennel Chicken Salad - $16</li>
-      <li>Apple Crunch Salad - $17</li>
-    </ul>
+    </section>
+    <section id="food">
+      <div class="card">
+        <h2>Food</h2>
+        <h3>Light Bites</h3>
+        <ul>
+          <li>Avocado Toast - $8</li>
+          <li>Coconut Yogurt Parfait - $8.95</li>
+          <li>Pepperoni Flatbread - $10</li>
+        </ul>
+        <h3>Burgers</h3>
+        <ul>
+          <li>Classic Black Bean Burger - $12</li>
+        </ul>
+        <h3>Wraps</h3>
+        <ul>
+          <li>Chicken Tzatziki Wrap - $12</li>
+          <li>Fennel Kale Protein Wrap - $14</li>
+          <li>Pesto Chicken Wrap - $16</li>
+        </ul>
+        <h3>Sandwiches</h3>
+        <ul>
+          <li>Garden Pesto - $13</li>
+          <li>Tuna Melt - $13</li>
+          <li>Pesto Chicken Melt - $14</li>
+        </ul>
+        <h3>Salads & Bowls</h3>
+        <ul>
+          <li>Tofu Egg Salad - $7.95</li>
+          <li>Kale Protein Salad - $14</li>
+          <li>Fennel Chicken Salad - $16</li>
+          <li>Apple Crunch Salad - $17</li>
+        </ul>
+      </div>
+      <img src="images/indoor-cafe.jpeg" alt="Indoor seating at the cafe in Watson's">
+    </section>
   </main>
   <footer></footer>
 </body>

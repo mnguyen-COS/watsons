@@ -12,57 +12,67 @@
   <header>
     <h1 class="logo">Watson's</h1>
     <nav class="menu" aria-label="Main navigation">
-      <a class="nav-item" href="index.html">Home</a>
-      <a class="nav-item" href="about.html">About</a>
-      <a class="nav-item" href="menu.html">Menu</a>
-      <a class="nav-item" href="contact.html" aria-current="page">Contact</a>
+    <ul class="nav-list">
+      <li><a class="nav-item" href="index.html">Home</a></li>
+      <li><a class="nav-item" href="about.html">About</a></li>
+      <li><a class="nav-item" href="menu.html">Menu</a></li>
+      <li><a class="nav-item" href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
     </nav>
   </header>
   <main>
-    <h1>Contact Us</h1>
-    <form>
-      <!-- JavaScript needed for full form functionality -->
-      <table>
-        <tr>
-          <td>
-            <label for="name" class="contact">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="email" class="contact">Email:</label>
-            <input type="email" id="email" name="email" placeholder="example@email.com">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="input-field">Message:</label>
-            <textarea id="input-field" name="input" rows="4" cols="45"></textarea>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="submit" id="submit" value="Submit">
-          </td>
-        </tr>
-      </table>
-    </form>
-    <ul>
-      <li>(559) 732-3866</li>
-      <li>hello@watsonsvisalia.com</li>
-      <li><a href="https://instagram.com/watsonsvisalia">Instagram</a></li>
-    </ul>
-    <h2>Location</h2>
-    <p>617 W Main St. Visalia, CA 93291</p>
-    <h2>Hours</h2>
-    <h3>Monday—Friday</h3>
-    <p>9 AM-6 PM (Market)</p>
-    <p>9 AM-4 PM (Cafe)</p>
-    <h3>Saturday</h3>
-    <p>9 AM-4 PM (Market & Cafe)</p>
-    <h3>Sunday</h3>
-    <p>11 AM-4 PM (Market & Cafe)</p>
+    <section id="contact">
+      <div class="card">
+        <h1>Contact Us</h1>
+        <ul>
+          <li>(559) 732-3866</li>
+          <li>hello@watsonsvisalia.com</li>
+          <li><a href="https://instagram.com/watsonsvisalia">Instagram</a></li>
+        </ul>
+        <form>
+          <!-- JavaScript needed for full form functionality -->
+          <table>
+            <tr>
+              <td>
+                <label for="name" class="contact">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email" class="contact">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="input-field">Message:</label>
+                <textarea id="input-field" name="input" rows="4" cols="45"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" id="submit" value="Submit">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Location</h2>
+        <p>617 W Main St. Visalia, CA 93291</p>
+        <h2>Hours</h2>
+        <h3>Monday—Friday</h3>
+        <ul style="list-style-type: none; padding: 0rem 0rem 1rem 0rem">
+          <li>9 AM-6 PM (Market)</li>
+          <li>9 AM-4 PM (Cafe)</li>
+        </ul>
+        <h3>Saturday</h3>
+        <p>9 AM-4 PM (Market & Cafe)</p>
+        <h3>Sunday</h3>
+        <p>11 AM-4 PM (Market & Cafe)</p>
+      </div>
+    </section>
     <img src="images/outdoor-venue.jpg" alt="The garden at Watson's decorated for a private event">
   </main>
   <footer></footer>

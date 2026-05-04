@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    width: 75%;
+    margin: auto;
+    padding: 5rem;
+}
+
+nav {
+    padding: 0rem 0rem 0.5rem 0rem;
+}
+
+section {
+    display: flex;
+    padding: 2rem 0rem;
+}
+
+h1 {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+h2, h3, h4 {
+    padding: 0rem 0rem 0.5rem 0rem;
+}
+
+p, ul {
+    padding: 0rem 0rem 1rem 0rem;
+    font-size: 1.1rem;
+}
+
+ul {
+    padding: 0rem 0rem 1rem 1rem;
+}
+
+
+img {
+    width: 100%;
+}
+
+form {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+}
+
+input, textarea {
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.logo {
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+    margin: auto;
+}
+
+.nav-list > ul > li {
+    
+    display: inline-block;
+    
+}
+
+.nav-list a {
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+.card {
+    width: 100%;
+    padding: 0rem 2rem 0rem 0rem;
+    
+}
+
+@media (max-width: 768px) {
+    
+    main {
+        padding: 4rem 0rem;
+    }
+    
+    header {
+        padding: 4rem 0rem 0rem 0rem;
+    }
+    
+    section {
+        padding: 0rem;
+        display: block;
+    }
+    
+    p, ul, label {
+        font-size: 1.25rem;
+    }
+    
+    img {
+        margin: 1rem 0rem;
+    }
+    
+    textarea {
+        width: 100%;
+    }
+    
+    .nav-list a {
+        padding: 0.5rem;
+        text-decoration: none;
+    }
+}
