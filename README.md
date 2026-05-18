@@ -15,6 +15,6 @@ This website redesign is created using HTML, CSS, and JavaScript. It aims to upg
 ### Desktop view
 <img width="1005" height="495" alt="screenshot-desktop" src="https://github.com/user-attachments/assets/8f12bc2a-9497-4edb-ad67-ededeabe0ab3" /> <br/>
 ### Tablet view 
-<img width="640" height="780" alt="screenshot-tablet" src="https://github.com/user-attachments/assets/c100a886-7eac-4c87-8e10-5d5db2902e4a" /> <br/>
+<img width="675" height="952" alt="screenshot-tablet" src="https://github.com/user-attachments/assets/5ea7aaeb-4487-451f-9ee5-c2f35bf65e03" /> <br/>
 ### Mobile view 
 <img width="550" height="1052" alt="screenshot-mobile" src="https://github.com/user-attachments/assets/c66049fa-b596-4933-b7d8-22de5bd17403" />
