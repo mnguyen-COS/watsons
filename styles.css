@@ -1,118 +1,401 @@
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gwendolyn-regular {
+  font-family: "Gwendolyn", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  background: #fff7f0;
+}
+
+header {
+  background: url("images/garden.jpeg") 0 0/cover;
+  padding: 10rem;
 }
 
 main {
-    width: 75%;
-    margin: auto;
-    padding: 5rem;
-}
-
-nav {
-    padding: 0rem 0rem 0.5rem 0rem;
+  width: 75%;
+  margin: auto;
+  padding: 2rem 5rem 4rem 5rem;
+  transition: all 0.3s ease;
 }
 
 section {
-    display: flex;
-    padding: 2rem 0rem;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+    padding-bottom: 4rem;
+    text-align: center;
 }
 
 h1 {
-    padding: 0rem 0rem 1rem 0rem;
+  /* used for site title logo */
+  text-align: center;
+  font-family: EB Garamond;
+  font-size: 6rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+h1::first-letter {
+  /* styles first letter in logo */
+  font-family: Gwendolyn;
+  font-size: 10rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.4rem;
 }
 
 h2, h3, h4 {
-    padding: 0rem 0rem 0.5rem 0rem;
+  padding-bottom: 0.5rem;
+  font-family: Playfair Display;
+}
+
+p {
+  font-size: 1.4rem;
 }
 
 p, ul {
-    padding: 0rem 0rem 1rem 0rem;
-    font-size: 1.1rem;
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: Quicksand;
 }
 
 ul {
-    padding: 0rem 0rem 1rem 1rem;
+  padding: 0rem 0rem 1rem 1rem;
 }
 
-
 img {
-    width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 form {
-    padding: 0rem 0rem 1rem 0rem;
+  padding-bottom: 1rem;
 }
 
 label {
-    display: block;
-    font-size: 1.1rem;
+  display: block;
+  font-size: 1.25rem;
+  font-family: Quicksand;
 }
 
 input, textarea {
-    margin: 0rem 0rem 0.5rem 0rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-family: Quicksand;
 }
 
-.logo {
-    text-align: center;
-    font-size: 4rem;
-    padding: 1rem 0rem 0rem 0rem;
+.banner {
+  /* hides alternate version of banner image by default */
+  display: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hamburger {
+  /* hides hamburger controls by default */
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3rem 3rem 0rem 0rem;
+  z-index: 1000;
+  float: right;
+}
+
+.hamburger span {
+  /* styles bars of hamburger icon */
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #54494b;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover span {
+  background: #c0df85;
+}
+
+.hamburger:active span {
+  background: #a2cf49;
 }
 
 .nav-list {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0rem;
-    margin: auto;
+  /* styles area of links in nav for spacing */
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+  margin: auto;
 }
 
 .nav-list > ul > li {
-    
-    display: inline-block;
-    
+  display: inline-block;
 }
 
 .nav-list a {
-    padding: 1rem 2rem;
-    text-decoration: none;
+  /* styles navigation links */
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  background: #54494b;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.nav-list a[aria-current="page"] {
+  background: #8d7c7f;
+}
+
+.nav-list a:hover,
+.nav-list a[aria-current="page"]:hover {
+  background: #c0df85;
+  color: #000000;
+}
+
+.nav-list a:focus,
+.nav-list a[aria-current="page"]:focus {
+  outline: 4px solid #fff7f0;
+  outline-offset: -3px;
+}
+
+.nav-list a:active,
+.nav-list a[aria-current="page"]:active {
+  background: #a2cf49;
+  outline: 4px solid #fff7f0;
+  outline-offset: -3px;
+}
+
+.link-btn {
+  /* styles links as buttons */
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  text-decoration: none;
+  background: #54494b;
+  color: #ffffff;
+  font-family: Quicksand;
+  transition: all 0.3s ease;
+}
+
+.link-btn:hover {
+  background: #c0df85;
+  color: #000000;
+}
+
+.link-btn:focus {
+  outline: 4px solid #fff7f0;
+  outline-offset: -3px;
+}
+
+.link-btn:active {
+  background: #a2cf49;
+  outline: 4px solid #fff7f0;
+  outline-offset: -3px;
 }
 
 .card {
-    width: 100%;
-    padding: 0rem 2rem 0rem 0rem;
-    
+  /* grouped text */
+  width: 100%;
+  padding: 0rem 2rem 0rem 0rem;
 }
 
-@media (max-width: 768px) {
-    
-    main {
-        padding: 4rem 0rem;
-    }
-    
-    header {
-        padding: 4rem 0rem 0rem 0rem;
-    }
-    
-    section {
-        padding: 0rem;
-        display: block;
-    }
-    
-    p, ul, label {
-        font-size: 1.25rem;
-    }
-    
-    img {
-        margin: 1rem 0rem;
-    }
-    
-    textarea {
-        width: 100%;
-    }
-    
-    .nav-list a {
-        padding: 0.5rem;
-        text-decoration: none;
-    }
+.tagline {
+  /* tagline on home page */
+  font-size: 1.75rem;
+  font-family: Playfair Display;
+}
+
+.end-text {
+  /* text in footer */
+  font-size: 1.2rem;
+}
+
+.food-drinks {
+  /* side-by-side display of menu categories */
+  display: flex;
+}
+
+.drinks {
+  padding-left: 5rem;
+}
+
+.contact {
+  list-style-type: none;
+}
+
+.contact > li {
+  margin-left: -1rem;
+}
+
+@media (max-width: 710px) {
+/* mobile design */
+  header {
+    padding: 0;
+    display: grid;
+    background-image: none;
+  }
+
+  main {
+    padding: 1rem 0rem;
+  }
+
+  main.active {
+    /* slides page content down to accommodate for hamburger menu opening */
+    padding-top: 17rem;
+  }
+
+  section {
+    padding: 0rem;
+    display: block;
+  }
+  
+  footer {
+    padding: 0rem 2rem 1.5rem 2rem;
+  }
+  
+  h1 {
+    padding: 1rem 0rem 0rem 0rem;
+    font-family: Playfair Display;
+    font-size: 3rem;
+    color: #000000;
+    text-shadow: none;
+  }
+  
+  h1::first-letter {
+    font-size: 6rem;
+  }
+
+  p, ul, label {
+    font-size: 1.25rem;
+  }
+
+  img {
+    margin: 1rem 0rem;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .banner {
+    /* alternate version of banner above logo and nav rather than behind */
+    display: block;
+    margin: 0;
+    grid-row: -1;
+    height: 30vh;
+  }
+
+  .logo-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding-left: 3rem;
+  }
+
+  .hamburger {
+    /* shows hamburger button */
+    display: block;
+  }
+
+  .nav-list {
+    /* hides navigation menu by default */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 42.5vh;
+    left: 0px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .nav-list.active {
+    /* displays navigation menu */
+    display: flex;
+    transition: all 0.3s ease;
+  }
+
+  .nav-list li {
+    background: #54494b;
+    padding: 0rem;
+    transition: all 0.3s ease;
+  }
+
+  .nav-list a {
+    padding: 1rem 1rem;
+    background: none;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    width: 95%;
+  }
+  
+  .end-text {
+    font-size: 1.1rem;
+  }
+  
+  .food-drinks {
+    /* removes inline display of menu categories for mobile */
+    display: block;
+  }
+  
+  .drinks {
+    padding: 0rem;
+  }
+}
+
+@media (min-width: 860px) {
+/* enlarged site title logo for desktops (logo has three breakpoints for mobile, tablet, and desktop) */
+  h1 {
+    font-size: 10rem;
+  }
+  
+  h1::first-letter {
+    font-size: 16rem;
+  }
 }

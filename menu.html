@@ -6,91 +6,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu | Watson's Organic Market & Cafe</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gwendolyn&family=Playfair+Display&family=Quicksand&display=swap');
+  </style>
 </head>
 
 <body>
   <header>
-    <h1 class="logo">Watson's</h1>
-    <nav class="menu" aria-label="Main navigation">
-    <ul class="nav-list">
-      <li><a class="nav-item" href="index.html">Home</a></li>
-      <li><a class="nav-item" href="about.html">About</a></li>
-      <li><a class="nav-item" href="menu.html">Menu</a></li>
-      <li><a class="nav-item" href="contact.html" aria-current="page">Contact</a></li>
-    </ul>
-    </nav>
+    <img src="images/garden.jpeg" alt="The garden at Watson's Organic Market & Cafe" class="banner">
+    <div class="logo-nav">
+      <h1 class="logo"><a href="index.html">Watson's</a></h1>
+      <nav class="nav-bar" aria-label="Main navigation">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li><a class="nav-item" href="index.html">Home</a></li>
+            <li><a class="nav-item" href="about.html">About</a></li>
+            <li><a class="nav-item" href="menu.html" aria-current="page">Menu</a></li>
+            <li><a class="nav-item" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
-    <h1>Our Menu</h1>
-    <h2>Order Now</h2>
-    <p><a href="https://www.toasttab.com/local/order/watsons/r-368c5b5f-492b-4f40-b128-8e22a67a8523">Order</a></p>
-    <!-- add more menu items later and cross-reference online menu with photos of in-store menu -->
+    <section>
+      <h2>Our Menu</h2>
+      <h3><a href="https://www.toasttab.com/local/order/watsons/r-368c5b5f-492b-4f40-b128-8e22a67a8523" class="link-btn">Order Now</a></h3>
+      <!-- add more menu items later and cross-reference online menu with photos of in-store menu -->
+    </section>
     <section id="drinks">
       <div class="card">
-        <h2>Drinks</h2>
-        <h3>Hot Drinks</h3>
+        <h3>Drinks</h3>
+        <h4>Hot & Iced Drinks</h4>
         <ul>
-          <li>Tea - $4</li>
-          <li>Coffee - $5</li>
-          <li>Honey Matcha Green Tea (Hot) - $6</li>
-          <li>Lavender Love Matcha Latte (Hot) - $8</li>
-          <li>Masala Chai Latte (Hot) - $8</li>
+          <li>Herbal Tea (hot only) - $4</li>
+          <li>SporTea (iced only) - $4</li>
+          <li>Superfood Hot Chocolate (hot only) - $4</li>
+          <li>Orange Juice (iced only) - $4.95</li>
+          <li>Alkaline Coffee - $4 hot, $6 iced</li>
+          <li>Adaptogen Coffee - $5 hot, $8 iced</li>
+          <li>Pour-over Coffee (hot only) - $5</li>
+          <li>Cold Brew Coffee (iced only) - $5</li>
+          <li>Raw Milk (iced only) - $6</li>
+          <li>Honey Matcha Green Tea (hot or iced) - $6</li>
+          <li>Sweet Matcha Latte (hot or iced) - $8</li>
+          <li>Lavender Love Matcha Latte (hot or iced) - $8</li>
+          <li>Masala Chai Latte (hot or iced) - $8</li>
+          <li>Pistachio Matcha (hot or iced) - $8</li>
+          <li>Strawberry Matcha (iced only) - $9</li>
+          <li>Protein Coffee (iced only) - $9</li>
         </ul>
-        <h3>Iced Drinks</h3>
-        <ul>
-          <li>Iced Coffee - $6</li>
-          <li>Honey Matcha Green Tea (Iced)- $6</li>
-          <li>Lavender Love Matcha Latte (Iced) - $8</li>
-          <li>Masala Chai Latte (Iced) - $8</li>
-          <li>Iced Strawberry Matcha - $9</li>
-        </ul>
-        <h3>Smoothies</h3>
+        <h4>Smoothies</h4>
         <ul>
           <li>Mango Magic Smoothie - $10</li>
+          <li>Peanut Butter Dream Smoothie - $10</li>
           <li>Strawberry Beauty Bomb Smoothie - $11</li>
           <li>Matcha Goddess Smoothie - $12</li>
+          <li>Master Smoothie - $13</li>
+          <li>Primal Smoothie - $13</li>
           <li>Tropical Sea Moss Smoothie - $14</li>
+        </ul>
+        <h4>Cold-Pressed Juices</h4>
+        <ul>
+          <li>Ginger Shot - $4.95</li>
+          <li>Turmeric Shot - $4.95</li>
+          <li>Beet & Watermelon Juice - $12.95</li>
+          <li>The Daily Press Juice - $12.95</li>
+          <li>Golden Carrot Juice - $12.95</li>
+          <li>Green Juice - $12.95</li>
         </ul>
       </div>
       <img src="images/strawberry-matcha.jpg" alt="Strawberry matcha">
     </section>
     <section id="food">
       <div class="card">
-        <h2>Food</h2>
-        <h3>Light Bites</h3>
+        <h3>Food</h3>
+        <h4>Light Bites</h4>
         <ul>
           <li>Avocado Toast - $8</li>
           <li>Coconut Yogurt Parfait - $8.95</li>
+          <li>Siggi's Coconut Yogurt Parfait - $8.95</li>
+          <li>Overnight Oats - $8.95</li>
+          <li>Cream Cheese Bagel - $8.95</li>
+          <li>Pizza Bagel - $9.95</li>
           <li>Pepperoni Flatbread - $10</li>
+          <li>Elevated Avocado Toast - $11.95</li>
         </ul>
-        <h3>Burgers</h3>
+        <h4>Burgers</h4>
         <ul>
+          <li>Cheeseburger - $12</li>
+          <li>Chick'n Burger - $12</li>
           <li>Classic Black Bean Burger - $12</li>
+          <li>Vegan Burger - $12</li>
         </ul>
-        <h3>Wraps</h3>
+        <h4>Wraps</h4>
         <ul>
+          <li>Classic Veggie on Naan - $12</li>
           <li>Chicken Tzatziki Wrap - $12</li>
+          <li>Classic Wrap - $13</li>
           <li>Fennel Kale Protein Wrap - $14</li>
           <li>Pesto Chicken Wrap - $16</li>
+          <li>Tuscan Chicken Wrap - $17</li>
         </ul>
-        <h3>Sandwiches</h3>
+        <h4>Sandwiches</h4>
         <ul>
+          <li>Cafe Classic - $12</li>
           <li>Garden Pesto - $13</li>
           <li>Tuna Melt - $13</li>
           <li>Pesto Chicken Melt - $14</li>
         </ul>
-        <h3>Salads & Bowls</h3>
+        <h4>Salads & Bowls</h4>
         <ul>
+          <li>Kale Salad - $7.95</li>
           <li>Tofu Egg Salad - $7.95</li>
           <li>Kale Protein Salad - $14</li>
+          <li>Strawberry Chicken Salad - $15.95</li>
           <li>Fennel Chicken Salad - $16</li>
           <li>Apple Crunch Salad - $17</li>
+          <li>Harvest Bowl - $17</li>
         </ul>
       </div>
       <img src="images/indoor-cafe.jpeg" alt="Indoor seating at the cafe in Watson's">
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <p class="end-text">Watson's Organic Market & Cafe. M. Nguyen, 2026.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

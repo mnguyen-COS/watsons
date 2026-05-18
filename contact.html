@@ -6,31 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Watson's Organic Market & Cafe</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gwendolyn&family=Playfair+Display&family=Quicksand&display=swap');
+  </style>
 </head>
 
 <body>
   <header>
-    <h1 class="logo">Watson's</h1>
-    <nav class="menu" aria-label="Main navigation">
-    <ul class="nav-list">
-      <li><a class="nav-item" href="index.html">Home</a></li>
-      <li><a class="nav-item" href="about.html">About</a></li>
-      <li><a class="nav-item" href="menu.html">Menu</a></li>
-      <li><a class="nav-item" href="contact.html" aria-current="page">Contact</a></li>
-    </ul>
-    </nav>
+    <img src="images/garden.jpeg" alt="The garden at Watson's Organic Market & Cafe" class="banner">
+    <div class="logo-nav">
+      <h1 class="logo"><a href="index.html">Watson's</a></h1>
+      <nav class="nav-bar" aria-label="Main navigation">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li><a class="nav-item" href="index.html">Home</a></li>
+            <li><a class="nav-item" href="about.html">About</a></li>
+            <li><a class="nav-item" href="menu.html">Menu</a></li>
+            <li><a class="nav-item" href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <section id="contact">
       <div class="card">
-        <h1>Contact Us</h1>
-        <ul>
+        <h2>Contact Us</h2>
+        <ul class="contact">
           <li>(559) 732-3866</li>
           <li>hello@watsonsvisalia.com</li>
           <li><a href="https://instagram.com/watsonsvisalia">Instagram</a></li>
         </ul>
         <form>
-          <!-- JavaScript needed for full form functionality -->
+		<!--- shown as example only; user input cannot be stored and submit button has been disabled --->
           <table>
             <tr>
               <td>
@@ -47,12 +60,12 @@
             <tr>
               <td>
                 <label for="input-field">Message:</label>
-                <textarea id="input-field" name="input" rows="4" cols="45"></textarea>
+                <textarea id="input-field" name="input" rows="4" cols="30"></textarea>
               </td>
             </tr>
             <tr>
               <td>
-                <input type="submit" id="submit" value="Submit">
+                <input type="submit" id="submit" value="Submit" disabled>
               </td>
             </tr>
           </table>
@@ -75,7 +88,10 @@
     </section>
     <img src="images/outdoor-venue.jpg" alt="The garden at Watson's decorated for a private event">
   </main>
-  <footer></footer>
+  <footer>
+    <p class="end-text">Watson's Organic Market & Cafe. M. Nguyen, 2026.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

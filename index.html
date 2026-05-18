@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html>
-
+    
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Watson's Organic Market & Cafe</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Gwendolyn&family=Playfair+Display&family=Quicksand&display=swap');
+  </style>
 </head>
 
 <body>
   <header>
-    <h1 class="logo">Watson's</h1>
-    <nav class="menu" aria-label="Main navigation">
-    <ul class="nav-list">
-      <li><a class="nav-item" href="index.html">Home</a></li>
-      <li><a class="nav-item" href="about.html">About</a></li>
-      <li><a class="nav-item" href="menu.html">Menu</a></li>
-      <li><a class="nav-item" href="contact.html" aria-current="page">Contact</a></li>
-    </ul>
-    </nav>
-    <!-- hero image -->
-    <img src="images/garden.jpeg" alt="The garden at Watson's Organic Market & Cafe">
+    <img src="images/garden.jpeg" alt="The garden at Watson's Organic Market & Cafe" class="banner">
+    <div class="logo-nav">
+      <h1 class="logo"><a href="index.html">Watson's</a></h1>
+      <nav class="nav-bar" aria-label="Main navigation">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-container">
+          <ul class="nav-list">
+            <li><a class="nav-item" href="index.html" aria-current="page">Home</a></li>
+            <li><a class="nav-item" href="about.html">About</a></li>
+            <li><a class="nav-item" href="menu.html">Menu</a></li>
+            <li><a class="nav-item" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
-    <h1>Watson's Organic Market & Cafe</h1>
-    <p>Watson’s Organic Market & Cafe offers healthy food and delicious dishes.</p>
+    <section>
+      <p class="tagline">Watson’s Organic Market & Cafe offers healthy food and delicious dishes.</p>
+    </section>
     <section id="store">
       <div class="card">
         <h2>Store</h2>
-        <p>Our organic market carries a diverse selection of products made from all-natural
-      ingredients. We sell groceries and body care items.</p>
+        <p>Our organic market carries a diverse selection of products made from all-natural ingredients. We sell groceries, health supplements, and body care items.</p>
         <h3>Market Hours</h3>
         <h4>Monday—Friday</h4>
         <p>9 AM-6 PM</p>
@@ -37,36 +48,58 @@
         <p>9 AM-4 PM</p>
         <h4>Sunday</h4>
         <p>11 AM-4 PM</p>
+        <p><a href="https://maps.app.goo.gl/6CdyqFtQwBKzvGSq5" class="link-btn">Google Maps</a></p>
       </div>
       <img src="images/market.jpeg" alt="Inside Watson's Organic Market">
     </section>
     <section id="menu">
       <div class="card">
-        <h2>Menu</h2>
-        <p><a href="https://www.toasttab.com/local/order/watsons/r-368c5b5f-492b-4f40-b128-8e22a67a8523">Order Now</a></p>
-        <!-- style order link as button -->
-        <p><a href="menu.html">Full Menu</a></p>
+        <h2>Cafe</h2>
+        <p>At our cafe, casual eats are prepared fresh daily from local, farm-to-table ingredients. We have vegetarian and vegan offerings, and 85-90% of our ingredients are organic.</p>
+        <h3>Menu Categories</h3>
+        <div class="food-drinks">
+        <div class="food">
+        <h4>Food</h4>
         <ul>
-          <li>Food</li>
-          <li>Drinks</li>
+          <li>Light Bites</li>
+          <li>Burgers</li>
+          <li>Wraps</li>
+          <li>Sandwiches</li>
+          <li>Salads & Bowls</li>
         </ul>
+        </div>
+        <div class="drinks">
+        <h4>Drinks</h4>
+        <ul>
+          <li>Hot Drinks</li>
+          <li>Iced Drinks</li>
+          <li>Smoothies</li>
+          <li>Cold-Pressed Juices</li>
+        </ul>
+        </div>
+        </div>
         <h3>Cafe Hours</h3>
         <h4>Monday—Saturday</h4>
         <p>9 AM-4 PM</p>
         <h4>Sunday</h4>
         <p>11 AM-4 PM</p>
+        <p><a href="https://www.toasttab.com/local/order/watsons/r-368c5b5f-492b-4f40-b128-8e22a67a8523" class="link-btn">Order Now</a></p>
       </div>
       <img src="images/assorted-drinks.jpg" alt="Assorted drinks from Watson's">
     </section>
     <section id="garden">
       <div class="card">
         <h2>Garden</h2>
-        <p>Come visit a secret garden tucked away in the heart of downtown Visalia. Our garden is open during normal business hours, and can be booked for private events.</p>
-        <p><a href="contact.html">Contact Us</a></p>
+        <p>Come visit our secret garden tucked away in the heart of downtown Visalia. Our garden is open during normal business hours, and can be booked for private events.</p>
+        <p><a href="contact.html" class="link-btn">Contact Us</a></p>
       </div>
+      <img src="images/open-garden.jpg" alt="An open clearing in the garden at Watson's">
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <p class="end-text">Watson's Organic Market & Cafe. M. Nguyen, 2026.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
